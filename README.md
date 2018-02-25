@@ -68,6 +68,7 @@ Model             |  Training Loss | Validation Loss
 Using 3 best models chosen, I do a prediction using test dataset. Here's the test result:
 
 #### 5.1 Accuracy:
+------------------------------------------------------------------------------
 
 Model             |  Accuracy 
 -------------------------|-------------------------: 
@@ -81,6 +82,7 @@ Model             |  Accuracy
 well, it seems the model with 2 layers and 150 wins the competition.
 
 #### 5.3 Do some checks with model 2 layers and 150 nodes
+------------------------------------------------------------------------------
 
 Test index 0     |  Test Data Index 9 | Test Data Index 2
 :-------------------------:| :-------------------------: | :-------------------------:
