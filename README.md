@@ -11,11 +11,11 @@ She's so calm and kind. she always stand in front of my door, waiting for me to 
 ## About Lucy:
 This one have a lot of energy. She can sing all night long! unlike her sister, she always angry when other cats touch her (even males). Well I guess that's why she's still single while her sister already had a kitten :'D
 
-![Keras](https://s3.amazonaws.com/keras.io/img/keras-logo-2018-large-1200.png)
-##### image source: https://keras.io/
-
 ## About this project
 I've just learned about Keras and I think I need to get started to have fun with this one. So, this is my 1st project using keras, in this project, I'll try to make a model to classify which one is Claudia, which one is Lucy.
+
+![Keras](https://s3.amazonaws.com/keras.io/img/keras-logo-2018-large-1200.png)
+##### image source: https://keras.io/
 
 Well, let's begin!
 
@@ -43,11 +43,11 @@ Here's the result:
 
 After the experimentation, the best 3 models is selected. they are:
 
-Model             |  Validation Loss
--------------------------|-------------------------:
-2 Layers 150 Nodes | TBA
-3 Layers 150 Nodes | TBA
-4 Layers 100 Nodes | TBA
+Model             |  Training Loss | Validation Loss
+-------------------------|-------------------------: | -------------------------:
+2 Layers 150 Nodes | 0.2732 | 0.8059
+3 Layers 150 Nodes | 0.1646 | 0.8059
+4 Layers 100 Nodes | 0.2067 | 0.8059
 
 
 ### 5. **Testing**
