@@ -18,7 +18,7 @@ This one have a lot of energy. She can sing all night long! unlike her sister, s
 
 
 ## About this project
-I've just learned about Keras and I think I need to get started to have fun with this one. So, this is my 1st project using keras, in this project, I'll try to make a model to classify which one is Claudia, which one is Lucy.
+I've just learned about Keras and I think I need to get started to have fun with this one. So, this is my 1st project using keras, in this project, I'll try to make a deep nets model to classify which one is Claudia, which one is Lucy.
 
 
 ![Keras](https://s3.amazonaws.com/keras.io/img/keras-logo-2018-large-1200.png)
@@ -84,7 +84,7 @@ well, it seems the model with 2 layers and 150 wins the competition.
 #### 5.3 Do some checks with model 2 layers and 150 nodes
 ------------------------------------------------------------------------------
 
-Test index 0     |  Test Data Index 9 | Test Data Index 2
+Test Data Index 0     |  Test Data Index 9 | Test Data Index 2
 :-------------------------:| :-------------------------: | :-------------------------:
 ![index0](https://raw.githubusercontent.com/astandri/TwinCatsClassification_Keras/master/Images/Claudia/Claudia70.jpg) | ![index0](https://raw.githubusercontent.com/astandri/TwinCatsClassification_Keras/master/Images/Lucy/Lucy58.jpg) | ![index0](https://raw.githubusercontent.com/astandri/TwinCatsClassification_Keras/master/Images/Claudia/Claudia20.jpg)
 Actual: Claudia (0) | Actual: Lucy (1) | Actual: Claudia (0)
