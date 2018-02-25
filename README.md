@@ -33,13 +33,13 @@ I took 100 samples of photos for both of them manually, while sleeping, eating, 
 
 ### 2. **Data Preprocessing**:
 Using OpenCV with the helps from matplotlib and pandas, I preprocess the raw images to become a clean dataset stored in dataframe. 
-I further split this dataset to 70:20:10 ratio for Testing purpose
+I labeled the dataset with **Claudia** as **0** and **Lucy** as **1**. I then further split this dataset to 80:10:10 ratio for Testing purpose
 
 The dataset then saved into three parts:
 
-	1. train.csv
-	2. validation.csv
-	3. test.csv
+	1. train.csv (160 rows of observations)
+	2. validation.csv (20 rows of observations)
+	3. test.csv (20 rows of observations)
 
 
 ### 3. **Model Building**:
@@ -65,4 +65,30 @@ Model             |  Training Loss | Validation Loss
 
 
 ### 5. **Testing**
-TBA
+Using 3 best models chosen, I do a prediction using test dataset. Here's the test result:
+
+#### 5.1 Accuracy:
+Model             |  Accuracy 
+-------------------------|-------------------------: 
+2 Layers 150 Nodes | 80%
+3 Layers 150 Nodes | 80% 
+4 Layers 100 Nodes | 75%
+
+
+#### 5.2 ROC Curve
+![Test Result](https://raw.githubusercontent.com/astandri/TwinCatsClassification_Keras/master/Images/test_result.PNG)
+well, it seems the model with 2 layers and 150 wins the competition.
+
+#### 5.3 Do some checks with model 2 layers and 150 nodes
+Test index 0     |  Test Data Index 9 | Test Data Index 2
+:-------------------------:| :-------------------------: | :-------------------------:
+![index0](https://raw.githubusercontent.com/astandri/TwinCatsClassification_Keras/master/Images/Claudia/Claudia70.jpg) | ![index0](https://raw.githubusercontent.com/astandri/TwinCatsClassification_Keras/master/Images/Lucy/Lucy58.jpg) | ![index0](https://raw.githubusercontent.com/astandri/TwinCatsClassification_Keras/master/Images/Claudia/Claudia20.jpg)
+Actual: Claudia (0) | Actual: Lucy (1) | Actual: Claudia (0)
+Predicted: Claudia (0) | Predicted: Lucy (1) | Predicted: Lucy (1)
+The machine's right!!! | The machine's right!!! | The machine's got it wrong now, maybe because Claudia too close to the camera? :'D
+
+### 6. Conclusions
+- This is obviously not a perfect model, Deep Learning with Neural Network usually works well with big datasets. using only 200 observations (160 as training data) to get 80% accuracy was good enough.
+- This is my 1st project using keras, so I need to learn more utilizing it in the future and welcoming any advice
+
+## So question for you, which one's cuter? Claudia? Lucy?
